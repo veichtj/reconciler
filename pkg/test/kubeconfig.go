@@ -11,7 +11,9 @@ import (
 )
 
 func ReadKubeconfig(t *testing.T) string {
-	kubecfgFile := os.Getenv("KUBECONFIG")
+	//kubecfgFile := os.Getenv("KUBECONFIG")
+	kubecfgFile := "/Users/I551617/Downloads/kubeconfig--goatz--jv-istio-test.yaml"
+
 	if kubecfgFile == "" {
 		home, err := os.UserHomeDir()
 		require.NoError(t, err)

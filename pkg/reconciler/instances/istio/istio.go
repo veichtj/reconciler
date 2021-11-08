@@ -34,3 +34,8 @@ func init() {
 	reconciler.WithReconcileAction(NewReconcileAction(performer)).
 		WithDeleteAction(NewUninstallAction(performer))
 }
+
+func NewIstioReconcilerComponent() {
+	log := logger.NewLogger(false)
+	log.Debugf("Initializing component reconciler '%s'", ReconcilerName)
+}
