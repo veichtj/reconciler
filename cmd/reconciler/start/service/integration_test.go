@@ -75,7 +75,7 @@ func TestReconciler(t *testing.T) {
 	}()
 	startReconciler(ctx, t)
 
-	//	runTestCases(t, kubeClient)
+	runTestCases(t, kubeClient)
 }
 
 func setGlobalWorkspaceFactory(t *testing.T) {
